@@ -17,7 +17,7 @@ BOT_TOKEN = getenv("BOT_TOKEN", "5907277199:AAE25UVOF10IDbPxhl6nlvidric7-Na8SB0"
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://moon:moon@moon.w1b88.mongodb.net/?retryWrites=true&w=majority")
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 
 # Chat id of a group for logging bot's activities
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001550054357"))
@@ -49,7 +49,7 @@ GIT_TOKEN = getenv(
 )  # Fill this variable if your upstream repository is private
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/untold_coder")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/+lbT3rsNZ8oRiMjU1")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/+N9g7RlNIML0xNDRl")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
