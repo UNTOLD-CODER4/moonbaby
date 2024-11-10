@@ -1,4 +1,4 @@
-from ANNIEMUSIC import app
+from InflexMusic import app
 from pyrogram import filters
 from pyrogram.errors import RPCError
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
@@ -17,7 +17,7 @@ from pyrogram.enums import ParseMode
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from ANNIEMUSIC.utils.jarvis_ban import admin_filter
+from InflexMusic.utils.jarvis_ban import admin_filter
 from PIL import ImageChops
 
 LOGGER = getLogger(__name__)
@@ -120,7 +120,7 @@ async def greet_new_member(_, member: ChatMemberUpdated):
                 user.photo.big_file_id, file_name=f"pp{user.id}.png"
             )
         except AttributeError:
-            pic = "ANNIEMUSIC/assets/upic.png"
+            pic = "InflexMusic/assets/upic.png"
         if (temp.MELCOW).get(f"welcome-{member.chat.id}") is not None:
             try:
                 await temp.MELCOW[f"welcome-{member.chat.id}"].delete()
